@@ -16,6 +16,8 @@
 
 
 
+
+
 Basic Description of How it Works:
 	1.reads and adjusts all the sensor values
 	2.updates the current state with the values from the gyro
@@ -27,11 +29,18 @@ Basic Description of How it Works:
 	8.send the desired motor speeds to the ESCs
 	9.repeat
 
+
+
+
+
+
 Timing:
 	1.The main loop executes at ~1000hz
 	2.The ESCs are updated at 250hz
 	3.The control inputs are received at ~20hz
 	4.The sensors update rates are independent (Don't really care about dropped readings)
+
+
 
 
 
@@ -49,6 +58,11 @@ A note on the combination of rotations:
 	q3 = q2*q1
 
 
+
+
+
+
+
 A note on the naming of vectors:
 	Names are three letters  or two letters and a description.
 	First letter is the coordinate system the vector is described in.
@@ -63,6 +77,11 @@ A note on the naming of vectors:
 	bgz = the z axis of the global coordinate system (up) described in terms of the body coordinate system
 
 	bbx {1,0,0} = the x axis of the body coordinate system described in terms of the body coordinate system
+
+
+
+
+
 
 	
 A note on the naming of quaternions:
@@ -82,6 +101,9 @@ A note on the naming of quaternions:
 
 	bgquat * ggx = bgx 
 	The global x axis multiplied by the rotation required to align the body coordinate system with the global one gives the global x axis in terms of body coordinates
+
+
+
 
 
 Good Sources of Information/Tutorials:
