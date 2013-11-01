@@ -15,19 +15,19 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-
+Everything is written in C and compiled with arm-none-eabi-gcc
 
 
 Basic Description of How it Works:
 	1.reads and adjusts all the sensor values
 	2.updates the current state with the values from the gyro
-	3.correct the current state with the values from the magnetometer and accelerometer (effectively a complimentary filter between (acc and mag) and the gyro
-	4.compute the desired attitude from the RC controller input
-	5.compute the rotation necessary to rotate from the quad's reference frame into the desired reference frame
-	6.turn this rotation into individual correcting rotations on each axis
-	7.calculate the speed for each motor based on the correcting rotations using a PD controller
-	8.send the desired motor speeds to the ESCs
-	9.repeat
+	3.corrects the current state with the values from the magnetometer and accelerometer (effectively a complimentary filter between (acc and mag) and the gyro
+	4.computes the desired attitude from the RC controller input
+	5.computes the rotation necessary to rotate from the quad's reference frame into the desired reference frame
+	6.turns this rotation into individual correcting rotations on each axis
+	7.calculates the speed for each motor based on the correcting rotations using a PD controller
+	8.sends the desired motor speeds to the ESCs
+	9.repeats
 
 
 
@@ -49,6 +49,8 @@ Timing:
 A note on the combination of rotations:
 	rotation1 = q1;
 	rotation2 = q2;
+	
+	Because rotations are non-commutative q1*q2 != q2*q1
 
 	This will be the most commonly used form.
 	To find the rotation equivalent to two consecutive rotations defined in the local reference frame:
@@ -95,7 +97,7 @@ A note on the naming of quaternions:
 	bdquat = the rotation necessary to rotate the body coordinate system into alignment with the desired coordinate system
 
 	To describe a vector in a second coordinate system given a first it is necessary to apply the OPPOSITE ROTATION to that required to rotate the first coordinate system into alignment with the second
-	To descrive vector v in global coordinates given body coordinates multiply gbquat NOT bgquat (seems unintuitive but visualize it in 2d...)
+	To describe vector v in global coordinates given body coordinates multiply gbquat NOT bgquat (seems unintuitive but visualize it in 2d...)
 
 	EX:
 
