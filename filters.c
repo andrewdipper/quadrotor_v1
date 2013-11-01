@@ -1,3 +1,8 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
+
 #include "filters.h"
 #include "structures.h"
 

@@ -1,3 +1,8 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
+
 #include "quat.h"
 
 //make the sqrt(a^2 + b^2 + c^2 + d^2) = 1

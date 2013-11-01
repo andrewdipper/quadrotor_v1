@@ -1,3 +1,7 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
 #pragma once
 
 #include "i2c.h"

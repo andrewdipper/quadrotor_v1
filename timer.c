@@ -1,3 +1,8 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
+
 #include "timer.h"
 
 //variables used by timer interrupts for timing the RC recevier's pulses

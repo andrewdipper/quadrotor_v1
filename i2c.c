@@ -1,3 +1,8 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
+
 #include "i2c.h"
 //
 // functions for driving the I2C bus

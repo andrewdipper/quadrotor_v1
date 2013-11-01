@@ -1,3 +1,8 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
+
 #pragma once
 
 //used for indexing arrays with sensor readings 

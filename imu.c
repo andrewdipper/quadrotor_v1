@@ -1,3 +1,7 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
 #include "imu.h"
 
 

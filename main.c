@@ -1,3 +1,8 @@
+/*
+Copyright (C) 2013  Andrew Pratt
+View the README
+*/
+
 #include "LPC17xx.h"
 #include "structures.h"
 #include "i2c.h"
