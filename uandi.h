@@ -3,6 +3,13 @@ Copyright (C) 2013  Andrew Pratt
 View the README
 */
 
+/*
+
+Contains the update and initialization functions as well as debugging and auxiliary functions
+
+*/
+
+
 #pragma once
 #include "structures.h"
 #include "imu.h"
