@@ -16,6 +16,7 @@
 
 
 Everything is written in C and compiled with arm-none-eabi-gcc
+Target Board: Blueboard LPC1768-H
 
 
 Basic Description of How it Works:
@@ -103,6 +104,9 @@ A note on the naming of quaternions:
 
 	bgquat * ggx = bgx 
 	The global x axis multiplied by the rotation required to align the body coordinate system with the global one gives the global x axis in terms of body coordinates
+
+
+
 
 
 
