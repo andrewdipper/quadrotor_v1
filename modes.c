@@ -3,6 +3,16 @@ Copyright (C) 2013  Andrew Pratt
 View the README
 */
 
+/*
+Contains functions defining the different flight modes for the quadrotor.  They handle the interpretation of control
+input and the calculation of the motor values from the control input and the current state.
+
+"Position Mode" is currently the only mode used.  The positions of the controller's sticks are translated into a 
+position that the quadrotor will assume.  In this mode the quadrotor is self levelling and it reduces the demand on
+the pilot since the quadrotor maintains a neutral position when the controller's sticks are released.
+
+*/
+
 #include "modes.h"
 
 /*
