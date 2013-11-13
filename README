@@ -1,4 +1,4 @@
-    A quaternion based quadrotor flight control software.
+    A quaternion based quadrotor flight control software implementation.
     Copyright (C) 2013  Andrew Pratt
 
     This program is free software: you can redistribute it and/or modify
