@@ -1,3 +1,0 @@
-#pragma once
-
-float lowpass(float past, float input, float dt, float k);
